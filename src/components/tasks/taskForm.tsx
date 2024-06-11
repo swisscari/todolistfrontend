@@ -55,7 +55,6 @@ export const TaskForm = ({
             body: task,
             method: !task.uuid ? 'POST' : 'PUT',
             url: '/tasks' + `${!task.uuid ? '' : `/${task.uuid}`}`,
-            confirmMessage: !task.uuid ? undefined : 'Are you sure?',
         })
             .then(reload)
             .catch(console.error)
@@ -171,7 +170,7 @@ export const TaskForm = ({
                             sx={{ ml: 2 }}
                             color='secondary'
                             variant='contained'
-                            onClick={handleCloseDrawer}
+                            onClick={closeDrawer}
                         >Close</Button>
                     </Center>
                 </Grid>
