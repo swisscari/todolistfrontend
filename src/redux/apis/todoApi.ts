@@ -1,6 +1,8 @@
 import { FetchArgs, createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
-const todoApiBaseUrl = 'http://localhost:3000'
+// const todoApiBaseUrl = 'http://localhost:3000'
+const todoApiBaseUrl = import.meta.env.VITE_TODO_BASE_URL
+
 
 export const todoApi = createApi({
     reducerPath: 'todoApi',

@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react';
 
 import { Show } from '../show';
 import { Task } from '../../redux/interfaces/task';
-import { useAlertFetch } from '../../hooks/useFetch';
+import { useAlertFetch } from '../../hooks/useAlertFetch';
 
 interface TaskCardProps {
     task: Task,

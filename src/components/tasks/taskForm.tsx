@@ -16,7 +16,7 @@ import { grey } from "@mui/material/colors";
 
 import { Center } from "../center"
 import { Task } from "../../redux/interfaces/task"
-import { useAlertFetch } from "../../hooks/useFetch";
+import { useAlertFetch } from "../../hooks/useAlertFetch";
 
 const StyledBox = styled('form')(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'light' ? '#fff' : grey[800],
